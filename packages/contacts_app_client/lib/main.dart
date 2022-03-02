@@ -1,4 +1,4 @@
-import 'package:contacts_app_client/src/contacts_rest_screen.dart';
+import 'package:contacts_app_client/contacts_app_client.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,10 +12,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Contacts App',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const ContactsRestScreen(),
+      home: ContactsSocketScreen(api: ContactsSocketApi()),
     );
   }
 }
