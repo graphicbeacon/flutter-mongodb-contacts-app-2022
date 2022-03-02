@@ -1,0 +1,3 @@
+name: contacts_app
+packages:
+  - packages/**

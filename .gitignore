@@ -1,0 +1,10 @@
+.packages
+.pub/
+.dart_tool/
+pubspec.lock
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
